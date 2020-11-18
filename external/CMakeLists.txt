@@ -36,7 +36,7 @@ target_compile_options(gmock PRIVATE -Wno-pedantic)
 
 function(configure_test testExecutable)
     # Link against gtest library
-    target_link_libraries(${testExecutable} gtest gtest_main gmock_main)
+    target_link_libraries(${testExecutable} PRIVATE gtest gtest_main gmock_main)
     # Disable variadic macro warnings (can be a problem when compiling with Clang)
     target_compile_options(${testExecutable} PRIVATE -Wno-gnu-zero-variadic-macro-arguments)
     # Create test name as the capitalized form of the test executable
