@@ -17,8 +17,7 @@ endif ()
 
 # Add googletest directly to our build. This defines
 # the gtest and gtest_main targets.
-set(gtest_release_version "1.10.0")
-add_subdirectory(googletest-release-${gtest_release_version} EXCLUDE_FROM_ALL)
+add_subdirectory(googletest-release-1.10.0 EXCLUDE_FROM_ALL)
 
 # The gtest/gtest_main targets carry header search path
 # dependencies automatically when using CMake 2.8.11 or
@@ -45,5 +44,3 @@ function(configure_test testExecutable)
     # Add executable to test suite
     add_test(${testName} ${testExecutable} ${GTEST_RUN_FLAGS})
 endfunction(configure_test)
-
-enable_testing()
