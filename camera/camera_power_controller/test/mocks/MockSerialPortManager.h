@@ -1,6 +1,8 @@
 #ifndef MOCKSERIALPORTMANAGER_H
 #define MOCKSERIALPORTMANAGER_H
 
+#include "gmock/gmock.h"
+
 #include "SerialPortManager.h"
 
 class MockSerialPortManager : public SerialPortManager
