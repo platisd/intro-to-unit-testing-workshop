@@ -1,5 +1,5 @@
-#ifndef ARDUINO_UNIT_TEST_PROJECT_CALCULATOR_H
-#define ARDUINO_UNIT_TEST_PROJECT_CALCULATOR_H
+#ifndef INTRO_UNIT_TEST_PROJECT_CALCULATOR_H
+#define INTRO_UNIT_TEST_PROJECT_CALCULATOR_H
 
 namespace calculator
 {
@@ -10,4 +10,4 @@ int subtract(int a, int b);
 double divide(int a, int b);
 } // namespace calculator
 
-#endif // ARDUINO_UNIT_TEST_PROJECT_CALCULATOR_H
+#endif // INTRO_UNIT_TEST_PROJECT_CALCULATOR_H
